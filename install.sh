@@ -17,8 +17,4 @@ if [ $# -gt 0 ]; then
     fi
 fi
 
-git checkout docking
-mkdir -p build
-echo "${CLIBPFM4} build folder created"
-
 sudo make && sudo make install && sudo make install-all && echo "${CLIBPFM4} compilation is done!"
