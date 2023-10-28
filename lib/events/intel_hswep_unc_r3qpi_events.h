@@ -414,7 +414,7 @@ static const intel_x86_entry_t intel_hswep_unc_r3_pe[]={
     .ngrp = 1,
     .modmsk = HSWEP_UNC_R3QPI_ATTRS,
     .numasks = LIBPFM_ARRAY_SIZE(hswep_unc_r3_rxr_inserts),
-    .umasks  = hswep_unc_r3_rxr_inserts/* shared */
+    .umasks  = hswep_unc_r3_rxr_inserts /* shared */
   },
   { .name = "UNC_R3_VN0_CREDITS_REJECT",
     .desc = "VN0 Credit Acquisition Failed",

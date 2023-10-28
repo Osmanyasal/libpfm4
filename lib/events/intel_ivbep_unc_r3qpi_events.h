@@ -370,7 +370,7 @@ static const intel_x86_entry_t intel_ivbep_unc_r3_pe[]={
     .ngrp = 1,
     .modmsk = IVBEP_UNC_R3QPI_ATTRS,
     .numasks = LIBPFM_ARRAY_SIZE(ivbep_unc_r3_rxr_inserts),
-    .umasks  = ivbep_unc_r3_rxr_inserts/* shared */
+    .umasks  = ivbep_unc_r3_rxr_inserts /* shared */
   },
   { .name = "UNC_R3_TXR_CYCLES_FULL",
     .desc = "Egress cycles full",
