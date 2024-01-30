@@ -20,3 +20,5 @@ if [ $# -gt 0 ]; then
 fi
 
 sudo make && sudo make install && sudo make install-all && touch all_set && echo "${CLIBPFM4} compilation is done!"
+
+
