@@ -47,6 +47,8 @@ ARCH_MAN=libpfm_intel_core.3	\
 	 libpfm_amd64_fam19h_zen3.3 \
 	 libpfm_amd64_fam19h_zen4.3 \
 	 libpfm_amd64_fam19h_zen3_l3.3 \
+	 libpfm_amd64_fam1ah_zen5.3  \
+	 libpfm_amd64_fam1ah_zen5_l3.3 \
 	 libpfm_intel_atom.3	\
 	 libpfm_intel_nhm.3	\
 	 libpfm_intel_nhm_unc.3 \
@@ -66,7 +68,10 @@ ARCH_MAN=libpfm_intel_core.3	\
 	 libpfm_intel_icx.3	\
 	 libpfm_intel_spr.3	\
 	 libpfm_intel_emr.3	\
+	 libpfm_intel_gnr.3	\
 	 libpfm_intel_glm.3	\
+	 libpfm_intel_adl_glc.3	\
+	 libpfm_intel_adl_grt.3	\
 	 libpfm_intel_knl.3	\
 	 libpfm_intel_knm.3	\
 	 libpfm_intel_snbep_unc_cbo.3 \
@@ -114,7 +119,20 @@ ARCH_MAN=libpfm_intel_core.3	\
 	 libpfm_intel_skx_unc_m3upi.3 \
 	 libpfm_intel_skx_unc_pcu.3 \
 	 libpfm_intel_skx_unc_ubo.3 \
-	 libpfm_intel_skx_unc_upi.3
+	 libpfm_intel_skx_unc_upi.3 \
+	 libpfm_intel_icx_unc_cha.3 \
+	 libpfm_intel_icx_unc_imc.3 \
+	 libpfm_intel_icx_unc_m2m.3 \
+	 libpfm_intel_icx_unc_iio.3 \
+	 libpfm_intel_icx_unc_pcu.3 \
+	 libpfm_intel_icx_unc_upi.3 \
+	 libpfm_intel_icx_unc_m3upi.3 \
+	 libpfm_intel_icx_unc_ubox.3 \
+	 libpfm_intel_icx_unc_m2pcie.3 \
+	 libpfm_intel_icx_unc_irp.3 \
+	 libpfm_intel_spr_unc_imc.3 \
+	 libpfm_intel_spr_unc_upi.3 \
+	 libpfm_intel_spr_unc_cha.3
 
 
 ifeq ($(CONFIG_PFMLIB_ARCH_I386),y)
@@ -128,25 +146,35 @@ ARCH_MAN += libpfm_arm_xgene.3 \
 	    libpfm_arm_ac7.3 \
 	    libpfm_arm_ac57.3 \
 	    libpfm_arm_ac53.3 \
+	    libpfm_arm_ac55.3 \
+	    libpfm_arm_ac72.3 \
+	    libpfm_arm_ac76.3 \
 	    libpfm_arm_ac15.3 \
 	    libpfm_arm_ac8.3 \
 	    libpfm_arm_ac9.3 \
 	    libpfm_arm_qcom_krait.3 \
 	    libpfm_arm_neoverse_n1.3 \
 	    libpfm_arm_neoverse_n2.3 \
-		libpfm_arm_neoverse_v1.3 \
-		libpfm_arm_neoverse_v2.3
+	    libpfm_arm_neoverse_n3.3 \
+	    libpfm_arm_neoverse_v1.3 \
+	    libpfm_arm_neoverse_v2.3 \
+	    libpfm_arm_neoverse_v3.3
 endif
 
 ifeq ($(CONFIG_PFMLIB_ARCH_ARM64),y)
 ARCH_MAN += libpfm_arm_xgene.3 \
 	    libpfm_arm_ac57.3 \
 	    libpfm_arm_ac53.3 \
+	    libpfm_arm_ac55.3 \
+	    libpfm_arm_ac72.3 \
+	    libpfm_arm_ac76.3 \
 	    libpfm_arm_a64fx.3 \
-		libpfm_arm_neoverse_n1.3 \
+	    libpfm_arm_neoverse_n1.3 \
 	    libpfm_arm_neoverse_n2.3 \
-		libpfm_arm_neoverse_v1.3 \
-		libpfm_arm_neoverse_v2.3
+	    libpfm_arm_neoverse_n3.3 \
+	    libpfm_arm_neoverse_v1.3 \
+	    libpfm_arm_neoverse_v2.3 \
+	    libpfm_arm_neoverse_v3.3
 endif
 
 ifeq ($(CONFIG_PFMLIB_ARCH_MIPS),y)
